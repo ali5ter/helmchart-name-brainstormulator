@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: "{{ .Release.Name }}-name-brainstormulator"
+  namespace: nb
+  labels:
+    app: name-brainstormulator
+spec:
+  replicas: {{ .Values.deploy.replicas }}
+  selector:
+    matchLabels:
+      app: name-brainstormulator
+  template:
+    metadata:
+      labels:
+        app: name-brainstormulator
+    spec:
+      containers:
+      - name: name-brainstormulator
+        image: "{{ .Values.deploy.image.repository }}:{{ .Chart.AppVersion }}"
+        ports:
+        - containerPort: {{ .Values.deploy.container.port }}

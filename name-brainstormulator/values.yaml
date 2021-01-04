@@ -1,0 +1,9 @@
+deploy:
+  replicas: 2
+  image:
+    repository: ali5ter/name-brainstormulator
+  container:
+    port: 80
+  service:
+    port: 8080
+    targetPort: 80
