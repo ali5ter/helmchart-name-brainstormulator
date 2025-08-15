@@ -1,3 +1,5 @@
+> **⚠️ This project is archived and no longer maintained.**
+
 # helmchart-name-brainstormulator
 Helm chart for k8 toy, [name-brainstormulator](https://github.com/ali5ter/name-brainstormulator)
 
