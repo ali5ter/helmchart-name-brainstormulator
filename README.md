@@ -1,4 +1,4 @@
-> **⚠️ Archived 2025-08-16. No longer maintained.**
+> **⚠️ Archived 2025-08-21. No longer maintained.**
 
 # helmchart-name-brainstormulator
 Helm chart for k8 toy, [name-brainstormulator](https://github.com/ali5ter/name-brainstormulator)
